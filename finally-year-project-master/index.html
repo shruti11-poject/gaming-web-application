@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My game Website</title>
+</head>
+
+<body>
+    
+    <audio controls autoplay hidden>
+        <source src="sedative-110241.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- <button id="showMore" onclick="toggleGames()">Play Games</button> -->
+    <!-- <span class="text1">WELCOME TO GAMING WORLD</span> -->
+    <h1 data-text="WELCOME TO GAMING WORLD...">WELCOME TO GAMING WORLD</h1>
+     <button id="showMore" onclick="toggleGames()">Play Games</button>
+    <div class="games active">
+        <a href="./2048 edited/index.html"># 2048</a>
+        <a href="./Bubble-Shooter-HTML5/bubble-shooter.html"># Bubble Shooter</a>
+        <a href="./tic  tac toe game/index.html"># Tic Tak Toe</a>
+    </div>
+</body>
+<script>
+    let btn =document.getElementById("showMore")
+    function toggleGames (){
+        // console.log(document.querySelector(".games").classList)
+     document.querySelector(".games").classList.toggle("active");
+    }
+</script>
+</html>
